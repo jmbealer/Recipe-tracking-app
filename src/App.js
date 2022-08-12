@@ -10,18 +10,9 @@ function App() {
   // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
   // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
 
- // const addRecipe = (newRecipe) => 
-  //    setRecipes((currRecipes) => [
-   //     newRecipe,
-    //    ...currRecipes,
-     // ])
   const addRecipe = (data) =>{
     setRecipes([...recipes, data])
   }
- // const deleteRecipe = (indexToDelete) =>
-  //    setRecipes((currRecipes) =>
-   //     currRecipes.filter((post, index) => index !== indexToDelete)
-    //    );
   
   const deleteRecipe = (targetIndex) => {
     setRecipes(recipes.filter((_, index) => index !== targetIndex))

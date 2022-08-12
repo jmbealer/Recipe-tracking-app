@@ -64,6 +64,7 @@ table {
 tr:nth-child(odd) {
  background-color: #fff0c7; 
 }
+
 td img {
   object-fit: scale-down;
   width: 100%;
@@ -78,12 +79,18 @@ th:nth-child(n+4):nth-child(-n+5) {
 th:nth-child(n+0):nth-child(-n+3){
   width: 10%;
 }
+th:nth-child(6) {
+  width: 10%;
+}
 
 /* Column size for tbody */
 
-tbody:nth-child(n+4):nth-child(-n+5) {
+td:nth-child(n+4):nth-child(-n+5) {
   width: 30%;
 }
-tbody:nth-child(n+0):nth-child(-n+3){
+td:nth-child(n+0):nth-child(-n+3){
+  width: 10%;
+}
+td:nth-child(6) {
   width: 10%;
 }
